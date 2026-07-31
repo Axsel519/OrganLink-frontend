@@ -1,0 +1,235 @@
+.signin-page-wrapper {
+  background-color: #f1f3f6;
+  min-height: 100vh;
+  padding: 1.5rem 4%;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-banner-header {
+  width: 100%;
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+.banner-title-left {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+.banner-title-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6b0c18;
+}
+
+.main-signin-box {
+  display: flex;
+  width: 100%;
+  max-width: 1150px;
+  background-color: #e2e4e8;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  align-items: stretch;
+}
+
+.image-half {
+  flex: 1.6;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.image-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.form-half-card {
+  flex: 1;
+  max-width: 400px;
+  min-width: 350px;
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.03);
+}
+
+.card-top-icon {
+  margin-bottom: 0.5rem;
+}
+
+.form-half-card h2 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.signin-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem 2.5rem 0.8rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.input-group input:focus {
+  border-color: #6b0c18;
+}
+
+.input-group .eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.form-options {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.form-options input[type="checkbox"] {
+  accent-color: #6b0c18;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.btn-signin {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #6b0c18;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.25rem;
+}
+
+.btn-signin:hover {
+  background-color: #500912;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  color: #4b5563;
+}
+
+.form-footer a {
+  color: #111827;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.form-footer .signup-link {
+  font-weight: 600;
+  color: #111827;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.social-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.social-icon-box:hover {
+  background-color: #f3f4f6;
+}
+
+.social-icon-box svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 960px) {
+  .top-banner-header {
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  .main-signin-box {
+    flex-direction: column;
+    background: transparent;
+    box-shadow: none;
+  }
+  .image-half {
+    width: 100%;
+  }
+  .form-half-card {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+}
